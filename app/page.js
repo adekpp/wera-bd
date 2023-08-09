@@ -68,7 +68,7 @@ export default function Home() {
     ]);
     setTimeout(() => {
       router.push("/details");
-    }, 1500);
+    }, 1000);
   };
 
   const particlesInit = async (main) => {
