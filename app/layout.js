@@ -1,6 +1,5 @@
-"use client";
+
 import "./globals.css";
-import { motion } from "framer-motion";
 import localFont from "next/font/local";
 const bdFont = localFont({ src: "../assets/bdFont.ttf" });
 export const metadata = {
@@ -14,17 +13,14 @@ export default function RootLayout({ children }) {
       <body
         className={`${bdFont.className} flex flex-col items-center min-h-screen`}
       >
-        <motion.main
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
+        <main
           className=" relative flex flex-col items-center max-w-md min-h-screen px-4"
         >
           <p className="text-center tracking-widest font-bd text-4xl text-pink-500 leading-relaxed mt-4">
             Urodziny Weroniki
           </p>
           {children}
-        </motion.main>
+        </main>
       </body>
     </html>
   );
