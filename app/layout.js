@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
         <main
           className=" relative flex flex-col items-center max-w-md min-h-screen px-4"
         >
-          <p className="text-center tracking-widest font-bd text-4xl text-pink-500 leading-relaxed mt-4">
+          <p className="text-center tracking-widest font-bd text-4xl text-pink-500 leading-relaxed mt-4 z-20">
             Urodziny Weroniki
           </p>
           {children}
