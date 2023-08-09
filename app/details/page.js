@@ -103,7 +103,7 @@ export default function Details() {
         <button
           type="button"
           onClick={() => router.push("/list")}
-          className="p-1 bg-white border-pink-600 border-2 rounded-md shadow-md hover:bg-pink-600 hover:text-white text-gray-900 mt-8 active:scale-90"
+          className="p-2 bg-white border-pink-600 border-2 rounded-md shadow-md hover:bg-pink-600 hover:text-white text-gray-900 mt-8 active:scale-90"
         >
           Lista gości
         </button>
