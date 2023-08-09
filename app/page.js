@@ -10,7 +10,7 @@ export default function Home() {
     useReward("balloonsReward", "balloons", {
       zIndex: 90,
       spread: 70,
-      elementCount: 50,
+      elementCount: 30,
       elementSize: 30,
       lifetime: 700,
       startVelocity: 5,
