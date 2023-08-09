@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useReward } from "react-rewards";
 import { useRouter } from "next/navigation";
-import Spinner from "../components/spinner";
+import Spinner from "../components/Spinner";
 
 export default function Details() {
   const router = useRouter();
