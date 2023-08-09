@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-import { motion } from "framer-motion";
 import BdCake from "./components/BdCake";
 import { useReward } from "react-rewards";
 import { useEffect, useState } from "react";
