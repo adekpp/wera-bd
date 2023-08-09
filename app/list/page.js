@@ -1,7 +1,7 @@
 import UsersList from "../components/UsersList";
 
 async function getData() {
-  const res = await fetch("http://localhost:3000/guests", {
+  const res = await fetch("https://wera-bd.vercel.app/guests", {
     next: { revalidate: 0 },
   });
   // The return value is *not* serialized
