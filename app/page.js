@@ -3,13 +3,7 @@ import { loadFull } from "tsparticles";
 import { useRouter } from "next/navigation";
 import Particles from "react-particles";
 import BdCake from "./components/BdCake";
-import {
-  stagger,
-  useAnimate,
-  animate,
-  motion,
-  usePresence,
-} from "framer-motion";
+import { stagger, useAnimate } from "framer-motion";
 
 const randomNumberBetween = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -68,7 +62,7 @@ export default function Home() {
     ]);
     setTimeout(() => {
       router.push("/details");
-    }, 1000);
+    }, 300);
   };
 
   const particlesInit = async (main) => {
@@ -719,8 +713,6 @@ export default function Home() {
       <div className="w-full flex flex-1 items-center place mx-0">
         <BdCake />
       </div>
-
-      {/* <span id="balloonsReward" className="absolute bottom-0" /> */}
     </>
   );
 }

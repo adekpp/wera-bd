@@ -63,11 +63,14 @@ export default function Details() {
         <h1 className="text-5xl font-bold bg-gradient-to-r from-pink-300 to-pink-600 bg-clip-text text-transparent mb-3 text-left w-full">
           Cześć!
         </h1>
-        <p className="text-sm">
-          Sint ut amet ad quis irure ipsum voluptate amet enim eiusmod irure
-          Lorem. Mollit quis enim sint velit velit est esse duis.
+        <p className="text-sm  md:text-xl text-left">
+          Zapraszam Cię na wspólne świętowanie moich drugich urodzin!
+        </p>
+        <p className="font-semibold text-sm  md:text-xl mt-2 text-left w-full whitespace-break-spaces">
+          Bawialnia Tęczolandia, Police 10.09, {"\n"}godzina 12:30.
         </p>
         <small className="place-self-end">~Werona</small>
+        <p className="mt-4">👇 Daj znać czy przyjedziesz 👇</p>
         <form
           onSubmit={handleSubmit}
           className="flex space-x-2 items-center mt-6"
@@ -93,7 +96,7 @@ export default function Details() {
                 isLoading ? "opacity-1" : "opacity-0"
               }`}
             >
-              <Spinner color={'white'} size={'24'} />
+              <Spinner color={"white"} size={"24"} />
             </span>
             <p className={`${isLoading && "opacity-0"}`}>Zapisz</p>
             <span id="balloonsReward" />
@@ -107,6 +110,15 @@ export default function Details() {
         >
           Lista gości
         </button>
+              <p className="mt-6 text-left w-full">Mapka: 🗺 </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2371.044393377216!2d14.545887712234924!3d53.539121560166784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa0cb3e270f5a5%3A0xdad122acd0e61a43!2sT%C4%99czolandia.%20Centrum%20Zabaw!5e0!3m2!1spl!2sfr!4v1691690987648!5m2!1spl!2sfr"
+            className=" mb-3 border-4 rounded-md border-pink-300 w-full h-[300px]"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+   
       </div>
       <ToastContainer
         position="top-center"
