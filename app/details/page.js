@@ -113,11 +113,13 @@ export default function Details() {
               <p className="mt-6 text-left w-full">Mapka: 🗺 </p>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2371.044393377216!2d14.545887712234924!3d53.539121560166784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa0cb3e270f5a5%3A0xdad122acd0e61a43!2sT%C4%99czolandia.%20Centrum%20Zabaw!5e0!3m2!1spl!2sfr!4v1691690987648!5m2!1spl!2sfr"
-            className=" mb-3 border-4 rounded-md border-pink-300 w-full h-[300px]"
+            className=" mb-6 border-4 rounded-md border-pink-300 w-full h-[300px]"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
+
+          <p className="bg-gradient-to-r from-sky-500 to-pink-500 rounded-md px-2 py-2 w-full text-white font-semibold text-sm text-center">Kontakt: 502 676 380 (mama Weroniki)</p>
    
       </div>
       <ToastContainer
