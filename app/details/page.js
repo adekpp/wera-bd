@@ -26,6 +26,10 @@ export default function Details() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!input.current.value || input.current.value === "") return;
+    const regex = /a[ns]?d[rn]?zr?e?j[ek]?/i;
+
+    if (regex.test(input.current.value)) return;
+
     setIsLoading(true);
     const res = await fetch("/guests", {
       method: "POST",
@@ -122,7 +126,11 @@ export default function Details() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
         <p className="bg-gradient-to-r from-sky-500 to-pink-500 rounded-md px-2 py-2 w-full text-white font-semibold text-sm text-center mb-6">
-          Kontakt: <a className="underline" href="tel:+48502676380">502 676 380</a> (mama Gosia)
+          Kontakt:{" "}
+          <a className="underline" href="tel:+48502676380">
+            502 676 380
+          </a>{" "}
+          (mama Gosia)
         </p>
       </div>
       <ToastContainer
