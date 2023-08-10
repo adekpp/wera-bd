@@ -63,12 +63,12 @@ export default function Details() {
         <h1 className="text-5xl font-bold bg-gradient-to-r from-pink-300 to-pink-600 bg-clip-text text-transparent mb-3 text-left w-full">
           Cześć!
         </h1>
-        🥳 🥳 🥳
+
         <p className="text-md  md:text-xl text-center font-semibold text-transparent  bg-clip-text bg-gradient-to-r from-sky-500 to-pink-600 animate-pulse">
           Zapraszam Cię na wspólne świętowanie moich drugich urodzin!
         </p>
-        🥳 🥳 🥳
-        <p className="font-semibold text-sm  md:text-xl mt-2 text-left w-full whitespace-break-spaces">
+        <span>🥳 🥳 🥳</span>
+        <p className="font-semibold text-sm  md:text-xl mt-4 text-left w-full whitespace-break-spaces">
           Bawialnia Tęczolandia, Police 10.09, {"\n"}godzina 12:30.
         </p>
         <small className="place-self-end mb-3">~Werona</small>
@@ -121,8 +121,8 @@ export default function Details() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-        <p className="bg-gradient-to-r from-sky-500 to-pink-500 rounded-md px-2 py-2 w-full text-white font-semibold text-sm text-center">
-          Kontakt: 502 676 380 (mama Gosia)
+        <p className="bg-gradient-to-r from-sky-500 to-pink-500 rounded-md px-2 py-2 w-full text-white font-semibold text-sm text-center mb-6">
+          Kontakt: <a className="underline" href="tel:+48502676380">502 676 380</a> (mama Gosia)
         </p>
       </div>
       <ToastContainer
